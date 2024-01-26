@@ -8,3 +8,6 @@
      prompt: "Please enter the URL"
      name: URL
      private: false
+   tasks:
+     debug:
+        msg: "{{ URL }}"  
