@@ -10,7 +10,7 @@
 
    - name: service start
      service:
-        name: start nginx
+        name: nginx
         state: started  
 
 
