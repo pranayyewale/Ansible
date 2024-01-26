@@ -1,13 +1,13 @@
-- name: Variable Playbook
+- name: variable Playbook
   hosts: all
   vars: 
     URL: "global.cloudblitz.in"
-  vars_files:
-      - ./varibale.yaml
-  vars_prompt:
-     prompt: "Please enter the URL"
-     name: URL
-     private: false
+#  vars_files:
+#      - ./varibale.yaml
+#  vars_prompt:
+#     prompt: "Please enter the URL"
+#     name: URL
+#    private: false
   tasks:
      name: print URL
      debug:
