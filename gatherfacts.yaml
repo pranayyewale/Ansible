@@ -1,0 +1,7 @@
+- name: gatherfacts
+  hosts: all
+  become: true
+  tasks:
+    - name: print os distrubution
+      debug:
+        msg: "{{ansible_distribution}}"
