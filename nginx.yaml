@@ -8,3 +8,9 @@
        name: nginx
        state: present
 
+   - name: service start
+     service:
+        name: start nginx
+        state: started  
+
+
