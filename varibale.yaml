@@ -9,5 +9,6 @@
      name: URL
      private: false
   tasks:
+     name: print URL
      debug:
         msg: "{{ URL }}"  
