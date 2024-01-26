@@ -3,7 +3,7 @@
   vars: 
     URL: "global.cloudblitz.in"
   vars_files:
-      - ./variable.yaml
+      - ./varibale.yaml
   vars_prompt:
      prompt: "Please enter the URL"
      name: URL
