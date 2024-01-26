@@ -1,0 +1,10 @@
+- name: Variable Playbook
+  hosts: all
+  vars: 
+    URL: "global.cloudblitz.in"
+  vars_files:
+      - ./variable.yaml
+  vars_prompt:
+     prompt: "Please enter the URL"
+     name: URL
+     private: false
