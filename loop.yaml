@@ -14,9 +14,9 @@
   - name: install git, wget, vim, httpd
     package: 
       name: "{{ item }}"
-      state: present
+      state: latest
     loop: 
       - git
       - wget
       - vim
-      - httpd
+      - apache2
