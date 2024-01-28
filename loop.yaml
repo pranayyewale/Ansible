@@ -12,7 +12,7 @@
     
   - name: install git, wget, vim, httpd
     package: 
-      name: "{{item}}"
+      name: "{{ item }}"
       state: present
     loop: 
       - git
