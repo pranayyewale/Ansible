@@ -1,0 +1,21 @@
+- name: Example for loop
+  hosts: all
+  tasks:
+  - name: print fruit names
+    debug: 
+      msg: "{{ item }}"
+    loop:
+      - Mango
+      - Banana
+      - Apple
+      - Straberry
+    
+  - name: install git, wget, vim, httpd
+    yum: 
+      name: "{{item}}"
+      state: present
+    loop: 
+      - git
+      - wget
+      - vim
+      - httpd
