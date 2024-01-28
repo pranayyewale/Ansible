@@ -11,7 +11,7 @@
       - Straberry
     
   - name: install git, wget, vim, httpd
-    yum: 
+    package: 
       name: "{{item}}"
       state: present
     loop: 
