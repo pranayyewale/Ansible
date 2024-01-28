@@ -1,5 +1,6 @@
 - name: Example for loop
   hosts: all
+  become: true
   tasks:
   - name: print fruit names
     debug: 
