@@ -1,0 +1,9 @@
+- name: install redhat packages
+  package:
+     - name: {{ items }}     
+       state: present
+  loop: 
+     - {{ app_extra_software }}    
+     - httpd 
+      
+- name: 
