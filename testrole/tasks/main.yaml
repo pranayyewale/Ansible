@@ -2,5 +2,5 @@
   become: true
   file:
       path: "/var/www/{{ doc }}"
-      state: file
+      state: directory
       mode: 0755
