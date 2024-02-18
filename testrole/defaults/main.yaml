@@ -1,1 +1,6 @@
-doc: "creators.html"
+install_packages: 
+- apache2
+- vim
+- git
+
+source_code: files/index.html
