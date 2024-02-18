@@ -1,4 +1,4 @@
-name: "deploy_test"
+name: "deploy"
 hosts: server
 roles:
     - testrole
