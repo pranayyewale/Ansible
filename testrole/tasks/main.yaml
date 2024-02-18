@@ -2,4 +2,4 @@
   become: true
   file:
       path: "/var/www/{{ doc }}"
-      state: file      
+      state: touch      
