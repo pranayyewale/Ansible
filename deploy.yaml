@@ -1,0 +1,5 @@
+name: "deploy_test"
+hosts: server
+roles:
+    - testrole
+    
