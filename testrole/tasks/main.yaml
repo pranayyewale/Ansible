@@ -1,11 +1,10 @@
 - name: "Install packages"
   become: true
-  packages: 
+  package: 
        name: "{{ item }}"
        state: present
   loop:
     - "{{ install_packages }}"
-
 
 - name: "copy source"
   become: true
