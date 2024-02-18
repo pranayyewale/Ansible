@@ -1,5 +1,22 @@
-- name: "create file"
+- name: "Install packages"
   become: true
-  file:
-      path: "/var/www/{{ doc }}"
-      state: touch      
+  packages: 
+       name: "{{ item }}"
+       state: present
+  loop:
+    - "{{ install_packages }}"
+
+
+- name: "copy source"
+  become: true
+  copy:
+      src: "source_code"
+      dest: /var/www/html/
+
+- name: "start apache2"
+  systemd:
+       name: apache2
+       state: started
+       enabled: true      
+
+     
