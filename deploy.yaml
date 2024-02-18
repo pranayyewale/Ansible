@@ -1,5 +1,5 @@
-name: "deploy"
-hosts: server
-roles:
-    - testrole
+- name: "deploy"
+  hosts: server
+  roles:
+     - testrole
     
