@@ -3,4 +3,4 @@ install_packages:
 - vim
 - git
 
-source_code: 'files'
+source_code: 'files/index.html'
