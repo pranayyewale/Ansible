@@ -1,6 +1,5 @@
-- name: "create directory"
+- name: "create file"
   become: true
   file:
       path: "/var/www/{{ doc }}"
-      state: directory
-      mode: 0755
+      state: file      
