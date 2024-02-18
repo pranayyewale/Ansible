@@ -3,4 +3,4 @@ install_packages:
 - vim
 - git
 
-source_code: 'files/app_code'
+source_code: 'files'
