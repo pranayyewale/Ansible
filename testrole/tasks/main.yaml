@@ -9,7 +9,7 @@
 - name: "copy source"
   become: true
   copy:
-      src: "source_code"
+      src: "{{ source_code }}"
       dest: /var/www/html/
 
 - name: "start apache2"
